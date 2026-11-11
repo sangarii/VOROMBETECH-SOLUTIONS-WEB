@@ -1,0 +1,493 @@
+import { SuccessStory, Testimonial } from '../types';
+
+export const SUCCESS_STORIES_DATA: SuccessStory[] = [
+  {
+    slug: 'vatika-business-centre-property-management-system',
+    clientName: 'Vatika Business Centre',
+    industry: 'SaaS',
+    date: '2026',
+    title: 'Vorombetech Solutions Joined hand with Vatika Business Centre to enhance Property Management System',
+    summary:
+      'Vatika Business Centre encountered difficulties properly managing their properties, giving clients a seamless experience, and allocating resources because of their rapidly expanding customer base and number of assets under control.',
+    challenge: [
+      'Vatika Business Centre encountered difficulties properly managing their properties, giving clients a seamless experience, and allocating resources because of their rapidly expanding customer base and number of assets under control.',
+      'Manual property allocation workflows and disconnected facility management tools created operational delays across multi-city business centers.',
+      'Leadership needed a centralized digital property management system capable of real-time occupancy tracking, client billing, and automated service request routing.',
+    ],
+    solution: [
+      'Vorombetech Solutions partnered with Vatika Business Centre to re-engineer and enhance their core Property Management System with automated resource allocation and centralized tenant workflows.',
+      'Implemented real-time asset tracking, automated booking & invoicing modules, and a unified client service portal.',
+      'Integrated role-based dashboards giving operations teams instant visibility across all managed business centers.',
+    ],
+    metrics: [
+      { value: '100%', label: 'Centralized Asset Visibility', detail: 'Unified multi-center property operations' },
+      { value: '45%', label: 'Faster Resource Allocation', detail: 'Automated booking & tenant onboarding' },
+      { value: '99.9%', label: 'Platform Uptime', detail: 'Seamless client & facility experience' },
+      { value: '24/7', label: 'Managed Support', detail: 'Continuous application enhancement' },
+    ],
+    quote: {
+      text: 'The good thing with Vorombetech is that they are well organized and process-oriented company with high transparency which gives us comfort in project execution and completion.',
+      author: 'Arvind Kumar',
+      role: 'Technology Leadership',
+      company: 'Vatika Business Centre Partner',
+    },
+    technologiesUsed: [
+      'Enterprise Web Application',
+      'Property Management System',
+      'Cloud Infrastructure',
+      'REST API Integration',
+      'Role-Based Access Control',
+    ],
+    visualTheme: 'transformation',
+  },
+  {
+    slug: 'enhance-security-design-b2c-learning-portal',
+    clientName: 'B2C eLearning Platform',
+    industry: 'SaaS',
+    date: '2026',
+    title: 'Enhance Security Design for B2C Learning Portal',
+    summary:
+      'Our Client that provides a B2C learning portal, offering online courses to individual learners. Recognizing the importance of data security and privacy in the education sector, our client sought to design a robust security architecture to protect sensitive user information, ensure secure access to the platform, and maintain the integrity of their learning portal.',
+    challenge: [
+      'Our Client provides a B2C learning portal offering online courses to individual learners and needed to protect sensitive learner PII and payment records.',
+      'Increasing cyber threats in the education sector required strict authentication, secure content delivery, and protection against OWASP Top 10 vulnerabilities.',
+      'The platform needed to scale to thousands of concurrent learners without compromising security or session latency.',
+    ],
+    solution: [
+      'Designed a robust end-to-end security architecture to protect sensitive user information, ensure secure access to the platform, and maintain the integrity of the learning portal.',
+      'Implemented multi-factor authentication (MFA), encrypted data storage, secure API gateways, and continuous vulnerability assessment (VAPT).',
+      'Hardened cloud infrastructure and content delivery networks to prevent unauthorized course access and data leakage.',
+    ],
+    metrics: [
+      { value: '100%', label: 'Data Privacy Compliance', detail: 'Protected learner PII & credentials' },
+      { value: 'Zero', label: 'Critical Security Breaches', detail: 'Hardened OWASP Top 10 defense' },
+      { value: '99.95%', label: 'Secure Portal Availability', detail: 'Uninterrupted B2C course delivery' },
+      { value: '< 5 min', label: 'Threat Detection SLA', detail: 'Continuous security monitoring' },
+    ],
+    quote: {
+      text: 'Vorombetech designed a robust security architecture that protected our learners’ sensitive information while keeping the learning experience fast and seamless.',
+      author: 'Pankaj Sharma',
+      role: 'Platform Director',
+      company: 'B2C Learning Portal',
+    },
+    technologiesUsed: [
+      'Security Assessment & VAPT',
+      'Identity & Access Management',
+      'Cloud Security',
+      'eLearning Portal Security',
+      'ISO 27001 Controls',
+    ],
+    visualTheme: 'security',
+  },
+  {
+    slug: 'enhance-security-b2b-saas-procurement-platform',
+    clientName: 'B2B Vendor & Procurement SaaS',
+    industry: 'SaaS',
+    date: '2026',
+    title: 'Vorombetech Solution helps Tech Firms to enhance the Security of their SaaS Platform',
+    summary:
+      'The organization is a B2B SaaS company that provides a cloud-based Vendor and procurement management platform to its clients. With a growing customer base and increasing concerns about data security, they recognized the importance of conducting comprehensive security testing to identify vulnerabilities.',
+    challenge: [
+      'The organization is a B2B SaaS company providing a cloud-based vendor and procurement management platform to enterprise clients.',
+      'With a rapidly growing customer base and increasing enterprise security questionnaires, they needed comprehensive security testing to identify and remediate platform vulnerabilities.',
+      'Multi-tenant procurement data required strict isolation, encryption, and compliance validation.',
+    ],
+    solution: [
+      'Conducted comprehensive application and cloud security assessments (VAPT) across the entire B2B SaaS vendor and procurement platform.',
+      'Identified and remediated critical authentication, API authorization, and multi-tenant data isolation vulnerabilities.',
+      'Established continuous security testing and compliance controls aligned with ISO 27001 and enterprise procurement standards.',
+    ],
+    metrics: [
+      { value: '100%', label: 'Vulnerabilities Remediated', detail: 'Full VAPT & API security hardening' },
+      { value: '3x', label: 'Faster Enterprise Onboarding', detail: 'Passed client security audits' },
+      { value: 'ISO 27001', label: 'Aligned Security Controls', detail: 'End-to-end SaaS governance' },
+      { value: '24/7', label: 'Security Posture Monitoring', detail: 'Proactive threat prevention' },
+    ],
+    quote: {
+      text: 'Very good environment and cultured organization, they are very processed in project execution and completion. Keep it up!',
+      author: 'Pankaj Sharma',
+      role: 'Enterprise Customer',
+      company: 'B2B SaaS Platform',
+    },
+    technologiesUsed: [
+      'SaaS Security Assessment',
+      'VAPT & Penetration Testing',
+      'Cloud Security Posture',
+      'API Security Hardening',
+      'ISO 27001_ISMS',
+    ],
+    visualTheme: 'saas',
+  },
+  {
+    slug: 'loyalty-management-tech-firm-risk-compliance',
+    clientName: 'Loyalty Management Tech Firm',
+    industry: 'E-commerce',
+    date: '2025',
+    title: 'Vorombetech helped Loyalty Management Tech Firm to achieve Risk and Compliance Management excellence!',
+    summary:
+      'Vorombetech Solutions showcased its experience in dealing with information security risk management, process integration and IT consultancy by creating and formulating a wide-ranging risk management system for the customer (Loyalty Management Platform). The client was contracted with Vorombetech Solutions for one year to establish a risk management framework and oversee the deployment and application.',
+    challenge: [
+      'A high-volume Loyalty Management Platform needed a comprehensive information security risk management and compliance framework to protect millions of customer reward profiles.',
+      'Fragmented security processes and regulatory requirements across retail and enterprise partners created audit challenges.',
+      'The client needed a dedicated partner over a one-year engagement to formulate, deploy, and oversee the entire risk management lifecycle.',
+    ],
+    solution: [
+      'Created and formulated a wide-ranging Information Security Risk Management System tailored to the Loyalty Management Platform.',
+      'Integrated IT consultancy, process governance, ISO 27001/27701 controls, and IT General Controls (ITGC) across engineering and operations.',
+      'Oversaw the full one-year deployment, staff training, and continuous compliance audit readiness.',
+    ],
+    metrics: [
+      { value: '1 Year', label: 'Turnkey Risk Governance', detail: 'End-to-end framework deployment' },
+      { value: '100%', label: 'Compliance Excellence', detail: 'Information security & privacy controls' },
+      { value: 'Zero', label: 'Audit Non-Conformities', detail: 'Across partner security reviews' },
+      { value: '99%', label: 'Client Satisfaction', detail: 'Process-oriented execution' },
+    ],
+    quote: {
+      text: 'The good thing with Vorombetech is that they are well organized and process-oriented company with high transparency which gives us comfort in project execution and completion.',
+      author: 'Arvind Kumar',
+      role: 'Director',
+      company: 'Caballus Technology',
+    },
+    technologiesUsed: [
+      'ISO 27001_ISMS',
+      'ISO 27701_PIMS',
+      'IT General Control (ITGC)',
+      'Risk Management Framework',
+      'IT Consulting Service',
+    ],
+    visualTheme: 'security',
+  },
+  {
+    slug: '35-percent-aws-infra-cost-reduced-online-auction',
+    clientName: 'Online Auction Platform',
+    industry: 'E-commerce',
+    date: '2025',
+    title: '35% AWS Infra cost reduced for online auction platform',
+    summary:
+      "Vorombetech team reviewed all the perspectives and solutions used in the customer's IT infrastructure (AWS) and acquired a detailed understanding of the services and their cost. We applied our advanced methodology and expertise to various invoicing and pricing methods provided by cloud service providers. We also used a robust tool set and a team of AWS specialists to manage the client's cloud environment by their standards, allowing them to achieve their cost management goals.",
+    challenge: [
+      'An online auction platform experienced surging AWS infrastructure costs due to unpredictable live-bidding traffic spikes and over-provisioned compute instances.',
+      'Lack of granular cost visibility and unoptimized AWS pricing plans reduced operational margins.',
+      'The client needed significant AWS cost reduction without sacrificing real-time bidding latency or platform availability.',
+    ],
+    solution: [
+      "Reviewed all perspectives and solutions used in the customer's AWS IT infrastructure and acquired a detailed understanding of every service and cost driver.",
+      'Applied Vorombetech’s advanced Cloud Cost Optimization methodology across AWS invoicing, Savings Plans, Reserved Instances, and dynamic auto-scaling.',
+      "Deployed a robust cloud monitoring toolset and dedicated AWS specialists to continuously manage and right-size the client's cloud environment.",
+    ],
+    metrics: [
+      { value: '35%', label: 'AWS Infrastructure Cost Reduced', detail: 'Verified monthly cloud savings' },
+      { value: '99.99%', label: 'Live Auction Uptime', detail: 'Zero performance degradation' },
+      { value: '24/7', label: 'AWS Cloud Monitoring', detail: 'Managed by certified AWS specialists' },
+      { value: '100%', label: 'Cost Governance Visibility', detail: 'Real-time FinOps dashboards' },
+    ],
+    quote: {
+      text: 'Great support mate, I had a question related to the pricing and the guys solved my concern with a fast response, I will highly recommend Vorombetech.',
+      author: 'Raghav Siddharth',
+      role: 'Operations Lead',
+      company: 'Yatrakart',
+    },
+    technologiesUsed: [
+      'AWS',
+      'Cloud Cost Optimization',
+      'Cloud Monitoring',
+      'Cloud Consultancy',
+      'Auto-Scaling & FinOps',
+    ],
+    visualTheme: 'cloud',
+  },
+  {
+    slug: 'resilient-virtual-desktop-infrastructure-vdi',
+    clientName: 'Enterprise VDI Deployment',
+    industry: 'BFSI',
+    date: '2025',
+    title: 'Resilient Virtual Desktop Infrastructure (VDI) Experience',
+    summary:
+      'Vorombetech Team designed the architecture for Virtual Desktop Infrastructure with Hyper-V. During the implementation security for the Infrastructure is the focal point, and implemented security controls such as Identity and access management (Microsoft AD), Single - Sign-On ( ADFS ), Secure RDP connection, and End Point Security.',
+    challenge: [
+      'A distributed enterprise workforce needed secure, high-performance remote desktop access without exposing corporate data on personal endpoints.',
+      'Unsecured remote connections and fragmented identity management posed compliance and data leakage risks.',
+      'The organization required a resilient Hyper-V Virtual Desktop Infrastructure with centralized identity and endpoint protection.',
+    ],
+    solution: [
+      'Designed and implemented a resilient Virtual Desktop Infrastructure (VDI) architecture powered by Microsoft Hyper-V.',
+      'Enforced defense-in-depth security controls as the focal point: Identity and Access Management (Microsoft Active Directory), Single Sign-On (ADFS), Secure RDP connections, and Endpoint Security.',
+      'Provided ongoing IT infrastructure management and monitoring for seamless remote employee productivity.',
+    ],
+    metrics: [
+      { value: '100%', label: 'Secure RDP & SSO Enforcement', detail: 'Microsoft AD & ADFS integrated' },
+      { value: '99.9%', label: 'VDI Session Availability', detail: 'High-availability Hyper-V cluster' },
+      { value: 'Zero', label: 'Endpoint Data Leakage', detail: 'Centralized VDI data governance' },
+      { value: '24/7', label: 'Infrastructure Support', detail: 'Managed IT & security operations' },
+    ],
+    quote: {
+      text: 'The good thing with Vorombetech is that they are well organized and process-oriented company with high transparency which gives us comfort in project execution and completion.',
+      author: 'Arvind Kumar',
+      role: 'IT Director',
+      company: 'Caballus Technology',
+    },
+    technologiesUsed: [
+      'Microsoft Hyper-V VDI',
+      'Microsoft Active Directory (IAM)',
+      'Single Sign-On (ADFS)',
+      'Secure RDP & Endpoint Security',
+      'IT Infrastructure Services',
+    ],
+    visualTheme: 'cloud',
+  },
+  {
+    slug: 'value-added-document-management-system',
+    clientName: 'Enterprise Document Repository',
+    industry: 'BFSI',
+    date: '2025',
+    title: 'Value-Added Document Management System',
+    summary:
+      'A system that manages the central repository of the documents attached to any business process in a secure and safe manner.',
+    challenge: [
+      'Business processes across departments relied on scattered file shares and email attachments, making document retrieval slow and audit trails incomplete.',
+      'Sensitive corporate contracts and operational records lacked role-based access control, version history, and encryption.',
+    ],
+    solution: [
+      'Engineered a centralized, value-added Document Management System (DMS) that securely manages all documents attached to any enterprise business process.',
+      'Implemented granular role-based permissions, automated version control, encrypted cloud storage, and instant metadata search.',
+    ],
+    metrics: [
+      { value: '60%', label: 'Faster Document Retrieval', detail: 'Centralized indexed repository' },
+      { value: '100%', label: 'Encrypted Document Storage', detail: 'Role-based access & audit trails' },
+      { value: 'Zero', label: 'Lost Process Attachments', detail: 'Automated workflow binding' },
+      { value: '99.9%', label: 'System Reliability', detail: 'Enterprise web portal architecture' },
+    ],
+    quote: {
+      text: 'Very good environment and cultured organization, they are very processed in project execution and completion. Keep it up!',
+      author: 'Pankaj Sharma',
+      role: 'Operations Head',
+      company: 'Vorombetech Customer',
+    },
+    technologiesUsed: [
+      'Enterprise Web Application Development',
+      'Document Management System',
+      'Role-Based Access Control',
+      'Cloud Storage Encryption',
+      'Workflow Automation',
+    ],
+    visualTheme: 'transformation',
+  },
+  {
+    slug: 'user-friendly-survey-management-portal',
+    clientName: 'Enterprise Market Research & Feedback',
+    industry: 'SaaS',
+    date: '2025',
+    title: 'User-Friendly Survey Management Portal',
+    summary:
+      'Vorombetech Team designed and developed a dynamic survey platform to create multiple purposes with drag and drop feature with various inputs functionality.',
+    challenge: [
+      'Creating customized customer feedback, employee engagement, and market research surveys required engineering intervention and rigid templates.',
+      'Business teams needed an intuitive drag-and-drop survey builder supporting diverse input types and real-time response analytics.',
+    ],
+    solution: [
+      'Designed and developed a dynamic, user-friendly Survey Management Portal featuring an interactive drag-and-drop form builder with rich input functionalities.',
+      'Added multi-channel distribution, conditional logic, real-time analytics dashboards, and automated CSV/BI reporting.',
+    ],
+    metrics: [
+      { value: '5x', label: 'Faster Survey Launch', detail: 'No-code drag-and-drop builder' },
+      { value: '+48%', label: 'Higher Response Completion', detail: 'Responsive UI/UX design' },
+      { value: 'Real-Time', label: 'Response Analytics', detail: 'Instant reporting & exports' },
+      { value: '100%', label: 'Custom Input Flexibility', detail: 'Multi-purpose survey engine' },
+    ],
+    quote: {
+      text: 'Great support mate, I had a question related to the pricing and the guys solved my concern with a fast response, I will highly recommend Vorombetech.',
+      author: 'Raghav Siddharth',
+      role: 'Product Manager',
+      company: 'Yatrakart',
+    },
+    technologiesUsed: [
+      'Survey Portal Development',
+      'UI/UX Design',
+      'Drag-and-Drop Form Engine',
+      'Enterprise Web Portal',
+      'Real-Time Analytics',
+    ],
+    visualTheme: 'crm',
+  },
+  {
+    slug: 'secure-on-premise-to-office-365-migration',
+    clientName: 'Enterprise Office 365 & SharePoint Client',
+    industry: 'BFSI',
+    date: '2025',
+    title: 'Secure On-Premise To Office 365 Migration',
+    summary:
+      'Our expert recommended to migrate their on-premise Email Server to office 365 with basic customization in SharePoint.',
+    challenge: [
+      'Maintaining legacy on-premise email servers created high hardware maintenance costs, mailbox storage limits, and remote collaboration friction.',
+      'The organization needed a zero-data-loss migration to Microsoft Office 365 alongside customized SharePoint document collaboration workspaces.',
+    ],
+    solution: [
+      'Executed a phased, secure migration from the legacy on-premise email server to Microsoft Office 365 with zero mailbox downtime.',
+      'Configured Exchange Online security policies, Entra ID authentication, and tailored SharePoint intranet customization for team collaboration.',
+    ],
+    metrics: [
+      { value: 'Zero', label: 'Mailbox Data Loss', detail: 'Seamless cutover to Office 365' },
+      { value: '99.99%', label: 'Email & Collaboration Uptime', detail: 'Cloud-native Microsoft 365 SLA' },
+      { value: '40%', label: 'Lower IT Maintenance Spend', detail: 'Retired on-premise mail hardware' },
+      { value: '100%', label: 'SharePoint Adoption', detail: 'Customized team workspaces' },
+    ],
+    quote: {
+      text: 'The good thing with Vorombetech is that they are well organized and process-oriented company with high transparency which gives us comfort in project execution and completion.',
+      author: 'Arvind Kumar',
+      role: 'Director',
+      company: 'Caballus Technology',
+    },
+    technologiesUsed: [
+      'Microsoft Solutions',
+      'Office 365 Migration',
+      'SharePoint Customization',
+      'Cloud Migration',
+      'IT Managed Service',
+    ],
+    visualTheme: 'cloud',
+  },
+  {
+    slug: 'revolutionized-managed-it-services-legal-consulting',
+    clientName: 'Legal Business Consulting Organization',
+    industry: 'BFSI',
+    date: '2025',
+    title: 'Revolutionalized Managed IT Services For Legal Business Consulting Organization',
+    summary:
+      'Vorombetech Solutions has offered fully Managed IT services which enabled the integration between Vorombetech Subject matter experts and the client’s internal IT team. With the team of experts, we are supporting the client with their day-to-day IT operation and support requests, Creating a roadmap for the latest technologies adoption, Security & Compliance management.',
+    challenge: [
+      'A prominent Legal Business Consulting Organization needed reliable day-to-day IT operations support and strict confidentiality compliance for sensitive legal data.',
+      'Internal IT staff were overwhelmed with routine support tickets, leaving limited capacity for strategic technology roadmapping and security governance.',
+    ],
+    solution: [
+      'Delivered fully Managed IT Services integrating Vorombetech Subject Matter Experts directly with the client’s internal IT team.',
+      'Supported day-to-day IT operations and user support requests while creating a strategic roadmap for modern technology adoption, security, and compliance management.',
+    ],
+    metrics: [
+      { value: '< 10 min', label: 'Support Response Time', detail: 'Integrated SME & internal IT pod' },
+      { value: '99.9%', label: 'IT Operations Continuity', detail: 'Proactive monitoring & patching' },
+      { value: '100%', label: 'Legal Data Compliance', detail: 'Managed security & governance' },
+      { value: '35%', label: 'Higher IT Team Productivity', detail: 'Strategic technology roadmap' },
+    ],
+    quote: {
+      text: 'Very good environment and cultured organization, they are very processed in project execution and completion. Keep it up!',
+      author: 'Pankaj Sharma',
+      role: 'Operations Lead',
+      company: 'Legal Consulting Partner',
+    },
+    technologiesUsed: [
+      'IT Managed Service',
+      'IT Consulting Service',
+      'Security & Compliance Management',
+      'Endpoint & Network Support',
+      'IT Infrastructure Solutions',
+    ],
+    visualTheme: 'bfsi',
+  },
+  {
+    slug: 'comprehensive-managed-security-services-hospitality-tech',
+    clientName: 'Hospitality Tech Firm',
+    industry: 'Healthcare',
+    date: '2025',
+    title: 'Comprehensive Managed Security Services For Hospitality Tech Firm',
+    summary:
+      'Vorombetech Solutions has developed a Managed Security Services to support the client’s business vision and cover all aspects of the organization’s information security and privacy requirements such as Managed Server Security, Managed Network Security, Endpoint Security Management, Application Security and Consulting, Secure SDLC Infrastructure Monitoring, Incident & Business Continuity which helps them to comply with their regulatory information security and privacy compliance requirement with the effective escalation of matrix and scalable team.',
+    challenge: [
+      'A fast-growing Hospitality Tech Firm needed 24/7 coverage across server security, network security, endpoint management, and secure SDLC to protect guest and partner data.',
+      'Regulatory information security and privacy mandates required a structured incident escalation matrix and business continuity readiness.',
+    ],
+    solution: [
+      'Developed and deployed a comprehensive Managed Security Services program covering Managed Server Security, Managed Network Security, Endpoint Security Management, Application Security & Consulting, and Secure SDLC Infrastructure Monitoring.',
+      'Established Incident & Business Continuity governance with an effective escalation matrix and a scalable 24/7 security engineering team.',
+    ],
+    metrics: [
+      { value: '24/7', label: 'Managed SOC & Security', detail: 'Server, network, endpoint & app security' },
+      { value: '100%', label: 'Regulatory Privacy Compliance', detail: 'Full Secure SDLC & BCMS coverage' },
+      { value: '< 4 min', label: 'Incident Escalation SLA', detail: 'Structured escalation matrix' },
+      { value: 'Zero', label: 'Uncontained Security Incidents', detail: 'Continuous infrastructure monitoring' },
+    ],
+    quote: {
+      text: 'The good thing with Vorombetech is that they are well organized and process-oriented company with high transparency which gives us comfort in project execution and completion.',
+      author: 'Arvind Kumar',
+      role: 'Security & Compliance Lead',
+      company: 'Hospitality Tech Partner',
+    },
+    technologiesUsed: [
+      'Managed Security Services',
+      'Server & Network Security',
+      'Endpoint Security Management',
+      'Secure SDLC & AppSec',
+      'Incident & Business Continuity (ISO 22301)',
+    ],
+    visualTheme: 'security',
+  },
+  {
+    slug: 'resilient-high-availability-vpn-global-it-consulting',
+    clientName: 'Global IT Consulting Firm',
+    industry: 'SaaS',
+    date: '2025',
+    title: 'Implementing A Resilient High Availability VPN Connection For Global IT Consulting Firm',
+    summary:
+      'We offered and deployed the solution in the respective organization between Head office & Remote Branches. We implemented IPsec Stateful Failover (VPN High Availability) between their office locations.',
+    challenge: [
+      'A Global IT Consulting Firm experienced intermittent connectivity drops between its Head Office and Remote Branches, disrupting real-time engineering collaboration.',
+      'Single-tunnel VPN links lacked automatic stateful failover when primary ISP circuits fluctuated.',
+    ],
+    solution: [
+      'Architected and deployed a resilient High-Availability VPN solution connecting the Head Office and all Remote Branches.',
+      'Implemented IPsec Stateful Failover (VPN High Availability) between office locations so active sessions seamlessly persist without packet loss during link transitions.',
+    ],
+    metrics: [
+      { value: '99.99%', label: 'Inter-Office VPN Uptime', detail: 'IPsec Stateful Failover active' },
+      { value: 'Zero', label: 'Session Drops on ISP Failover', detail: 'Seamless branch connectivity' },
+      { value: '256-Bit', label: 'Encrypted IPsec Tunnels', detail: 'Head Office to Remote Branches' },
+      { value: '24/7', label: 'Network Infrastructure SLA', detail: 'Continuous link telemetry' },
+    ],
+    quote: {
+      text: 'Great support mate, I had a question related to the pricing and the guys solved my concern with a fast response, I will highly recommend Vorombetech.',
+      author: 'Raghav Siddharth',
+      role: 'Network Operations',
+      company: 'Yatrakart',
+    },
+    technologiesUsed: [
+      'IPsec Stateful Failover',
+      'High-Availability VPN',
+      'IT Infrastructure Services & Solutions',
+      'Network Security Engineering',
+      'Multi-Branch SD-WAN',
+    ],
+    visualTheme: 'cloud',
+  },
+];
+
+export const TESTIMONIALS_DATA: Testimonial[] = [
+  {
+    id: 'test-1',
+    quote:
+      'The good thing with Vorombetech is that they are well organized and process-oriented company with high transparency which gives us comfort in project execution and completion.',
+    author: 'Arvind Kumar',
+    role: 'Client Partner',
+    company: 'Caballus Technology',
+    industry: 'IT & Digitalization',
+    impactMetric: '99% Client Satisfaction',
+  },
+  {
+    id: 'test-2',
+    quote:
+      'Very good environment and cultured organization, they are very processed in project execution and completion. Keep it up!',
+    author: 'Pankaj Sharma',
+    role: 'Enterprise Client',
+    company: 'Vorombetech Customer',
+    industry: 'Cloud & Security',
+    impactMetric: '750+ Projects Delivered',
+  },
+  {
+    id: 'test-3',
+    quote:
+      'Great support mate, I had a question related to the pricing and the guys solved my concern with a fast response, I will highly recommend Vorombetech.',
+    author: 'Raghav Siddharth',
+    role: 'Technology Leader',
+    company: 'Yatrakart',
+    industry: 'E-Commerce & SaaS',
+    impactMetric: '250+ Global Clients',
+  },
+];

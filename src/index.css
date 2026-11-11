@@ -1,0 +1,393 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    --brand-primary: #18181b;
+    --brand-yellow: #f5c400;
+    --brand-yellow-hover: #eab308;
+    --brand-yellow-soft: #fffbeb;
+    --brand-canvas: #ffffff;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #ffffff !important;
+    color: #0f172a;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Keep page background pure white without blurry blobs */
+.blur-3xl {
+  display: none !important;
+}
+
+.bg-\[\#f8f9fa\],
+.from-\[\#f0fdf4\] {
+  background-image: none !important;
+  background-color: #ffffff !important;
+}
+
+/* Soft Yellow Tint for Particular Cards / Highlights Only */
+.bg-\[\#f0fdf4\],
+.bg-emerald-50,
+.bg-emerald-50\/80 {
+  background-image: none !important;
+  background-color: #fffbeb !important;
+}
+
+.hover\:bg-emerald-50:hover,
+.hover\:bg-emerald-50\/70:hover {
+  background-image: none !important;
+  background-color: #fef3c7 !important;
+}
+
+/* Button Shimmer Sweep Keyframes */
+@keyframes btnShimmerSweep {
+  0% {
+    transform: translateX(-140%) skewX(-20deg);
+  }
+  35%, 100% {
+    transform: translateX(240%) skewX(-20deg);
+  }
+}
+
+/* Clean Primary Golden Yellow Button (Single Clean Border — No Double Line on Buttons) */
+.bg-\[\#166534\],
+.btn-primary-gold {
+  position: relative;
+  overflow: hidden;
+  background-image: none !important;
+  background-color: #f5c400 !important;
+  color: #18181b !important;
+  border: 1px solid #eab308 !important;
+  box-shadow: 0 4px 12px -2px rgba(245, 196, 0, 0.3) !important;
+  transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.24s cubic-bezier(0.22, 1, 0.36, 1),
+              background-color 0.2s ease,
+              border-color 0.2s ease !important;
+}
+
+/* Diagonal Shimmer Light Sweep on Primary Buttons */
+.bg-\[\#166534\]::after,
+.btn-primary-gold::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.45) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translateX(-140%) skewX(-20deg);
+  animation: btnShimmerSweep 4.2s infinite ease-in-out;
+  pointer-events: none;
+}
+
+.bg-\[\#166534\] > span,
+.bg-\[\#166534\] > svg,
+.btn-primary-gold > span,
+.btn-primary-gold > svg {
+  position: relative;
+  z-index: 1;
+  color: #18181b !important;
+  transition: transform 0.26s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.hover\:bg-\[\#14532d\]:hover,
+.bg-\[\#166534\]:hover,
+.btn-primary-gold:hover {
+  background-image: none !important;
+  background-color: #ffd12e !important;
+  color: #18181b !important;
+  border-color: #eab308 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -4px rgba(245, 196, 0, 0.45) !important;
+}
+
+.bg-\[\#166534\]:hover > svg,
+.btn-primary-gold:hover > svg {
+  transform: translateX(4px);
+}
+
+.bg-\[\#166534\]:active,
+.btn-primary-gold:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(245, 196, 0, 0.25) !important;
+}
+
+/* Clean Secondary Button (No Double Line on Buttons) */
+.btn-secondary-clean {
+  background-color: #ffffff !important;
+  color: #18181b !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+  transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.24s ease,
+              border-color 0.2s ease,
+              background-color 0.2s ease !important;
+}
+
+.btn-secondary-clean svg {
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.btn-secondary-clean:hover {
+  background-color: #fffbeb !important;
+  border-color: #f5c400 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px -4px rgba(245, 196, 0, 0.25) !important;
+}
+
+.btn-secondary-clean:hover svg {
+  transform: translateX(4px);
+}
+
+/* Selective Architectural Double-Line Accents on Key UI Showcase Places */
+.ui-double-line-card {
+  border: 1.5px solid #e2e8f0 !important;
+  box-shadow:
+    0 2.5px 0 0 #ffffff,
+    0 4px 0 0 #f5c400,
+    0 12px 24px -8px rgba(15, 23, 42, 0.07) !important;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease !important;
+}
+
+.ui-double-line-card:hover {
+  border-color: #f5c400 !important;
+  transform: translateY(-3px);
+  box-shadow:
+    0 2.5px 0 0 #ffffff,
+    0 4.5px 0 0 #eab308,
+    0 16px 30px -8px rgba(245, 196, 0, 0.22) !important;
+}
+
+/* Subtle Double-Line Section Divider Band */
+.ui-double-line-section {
+  border-bottom: 1px solid #e2e8f0 !important;
+  box-shadow: 0 3px 0 0 #ffffff, 0 4px 0 0 #fde68a !important;
+}
+
+/* Clean Card Hover Design + Subtle Double-Line Reveal on Hover */
+.clean-card,
+a.group.rounded-2xl,
+div.group.rounded-2xl,
+article.group.rounded-2xl {
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03) !important;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease !important;
+}
+
+.clean-card:hover,
+a.group.rounded-2xl:hover,
+div.group.rounded-2xl:hover,
+article.group.rounded-2xl:hover {
+  border-color: #f5c400 !important;
+  transform: translateY(-4px);
+  box-shadow:
+    0 2px 0 0 #ffffff,
+    0 3.5px 0 0 #f5c400,
+    0 14px 28px -8px rgba(15, 23, 42, 0.08) !important;
+}
+
+/* Particular Soft Yellow Callout Card with Light-Thin Double Line Frame */
+.card-soft-yellow {
+  background-color: #fffbeb !important;
+  border: 1.5px solid #fcd34d !important;
+  box-shadow:
+    inset 0 2px 0 0 #ffffff,
+    0 2.5px 0 0 #ffffff,
+    0 4px 0 0 #f5c400,
+    0 10px 24px -6px rgba(234, 179, 8, 0.14) !important;
+}
+
+/* Group Hover Icon Tile inside Cards */
+.group:hover .group-hover\:bg-\[\#166534\] {
+  background-image: none !important;
+  background-color: #f5c400 !important;
+  color: #18181b !important;
+}
+
+.group:hover .group-hover\:bg-\[\#166534\] > svg,
+.group:hover .group-hover\:bg-\[\#166534\] > span {
+  color: #18181b !important;
+}
+
+/* Icon Tiles & Small Badges */
+.bg-\[\#166534\]\/10,
+.bg-\[\#166534\]\/12,
+.bg-\[\#166534\]\/15,
+.bg-\[\#166534\]\/8 {
+  background-image: none !important;
+  background-color: #fef3c7 !important;
+}
+
+/* Brand Text & Link Accents */
+.text-\[\#166534\],
+.text-emerald-700,
+.text-emerald-800 {
+  color: #b45309 !important;
+}
+
+.hover\:text-\[\#166534\]:hover,
+.group:hover .group-hover\:text-\[\#166534\] {
+  color: #92400e !important;
+}
+
+/* Full-Width Dark Contrast Banners */
+.from-\[\#166534\] {
+  background-image: none !important;
+  background-color: #18181b !important;
+}
+
+/* Top Accent Strips on Cards -> Solid Golden Yellow */
+.h-2.from-\[\#166534\],
+.h-1\.5.from-\[\#166534\] {
+  background-image: none !important;
+  background-color: #f5c400 !important;
+}
+
+/* Borders & Focus Rings */
+.border-\[\#166534\] {
+  border-color: #f5c400 !important;
+}
+
+.border-emerald-200,
+.border-emerald-200\/90,
+.border-emerald-200\/80,
+.border-emerald-200\/70,
+.border-emerald-300 {
+  border-color: #fde68a !important;
+}
+
+.focus\:border-\[\#166534\]:focus,
+.focus-within\:border-\[\#166534\]:focus-within {
+  border-color: #f5c400 !important;
+  box-shadow: 0 0 0 3px rgba(245, 196, 0, 0.2) !important;
+}
+
+/* ==========================================================================
+   PARTNERS INFINITE MARQUEE & HORIZONTAL CAROUSEL UTILITIES
+   ========================================================================== */
+@keyframes partnerMarqueeLeft {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes partnerMarqueeRight {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.partner-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: partnerMarqueeLeft 34s linear infinite;
+  will-change: transform;
+}
+
+.partner-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: partnerMarqueeRight 38s linear infinite;
+  will-change: transform;
+}
+
+.partner-marquee-left:hover,
+.partner-marquee-right:hover,
+.partner-marquee-paused {
+  animation-play-state: paused !important;
+}
+
+.partner-marquee-mask {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 7%,
+    black 93%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 7%,
+    black 93%,
+    transparent 100%
+  );
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.client-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: partnerMarqueeLeft 46s linear infinite;
+  will-change: transform;
+}
+
+.client-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: partnerMarqueeRight 52s linear infinite;
+  will-change: transform;
+}
+
+.client-marquee-slow-left {
+  display: flex;
+  width: max-content;
+  animation: partnerMarqueeLeft 56s linear infinite;
+  will-change: transform;
+}
+
+.client-marquee-left:hover,
+.client-marquee-right:hover,
+.client-marquee-slow-left:hover,
+.client-marquee-paused {
+  animation-play-state: paused !important;
+}
